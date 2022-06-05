@@ -1,0 +1,73 @@
+.Layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+}
+
+.Background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.Sky {
+    @extend .Background;
+
+    background: black url(../../../public/background/sky-stars.jpg) repeat top center;
+    background-size: stretch;
+    z-index: -3;
+
+    animation: move-sky 2000s linear infinite;
+}
+
+@keyframes move-sky {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 5000px;}
+}
+
+
+.TwinklingStars {
+    @extend .Background;
+
+    background: transparent url(../../../public/background/twinkling-stars.jpg) repeat top center;
+    background-size: stretch;
+    z-index: -2;
+
+    animation: twink-and-move 10s linear infinite alternate;
+}
+
+@keyframes twink-and-move {
+    from {opacity: 0;}
+    to {opacity: 0.3;}
+    from {background-position: 0 0;}
+    to {background-position: -10px 25px;}
+}
+
+.Fog {
+    @extend .Background;
+
+    background: transparent url(../../../public/background/fog.png) repeat top center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.Content {
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    min-height: 80vh;
+
+    backdrop-filter: blur(2px) invert(0.05) contrast(0.9);
+}
