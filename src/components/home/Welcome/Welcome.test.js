@@ -4,11 +4,13 @@ import '@testing-library/jest-dom/extend-expect';
 import Welcome from './Welcome';
 
 describe('<Welcome />', () => {
-  test('it should mount', () => {
+  test('it should render correctly', () => {
     render(<Welcome />);
     
-    const welcome = screen.getByTestId('Welcome');
+    const welcome = screen.queryByText('Welcome!!!');
+    const nickname = screen.queryByText('Miozel');
 
-    expect(welcome).toBeInTheDocument();
+    expect(welcome).toBeVisible();
+    expect(nickname).toBeVisible();
   });
 });

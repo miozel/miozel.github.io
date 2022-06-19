@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Layout.module.scss';
-import NavBar from 'components/NavBar/NavBar';
+import NavBar from 'components/layout/NavBar/NavBar';
 
 const Layout = (props) => (
   <div className={styles.Layout}>
@@ -11,13 +11,16 @@ const Layout = (props) => (
       <div className={styles.Fog} />
     </div>
     
-    <div data-testid="NavBar">
-      <NavBar />
+    <div className={styles.Page}>
+      <div data-testid="NavBar">
+        <NavBar />
+      </div>
+    
+      <div data-testid="Content">
+        { props.children }
+      </div>
     </div>
     
-    <div data-testid="Content">
-      { props.children }
-    </div>
     </div>
 );
 

@@ -4,22 +4,22 @@
     align-items: center;
 
     width: 100%;
-    height: 60vh;
+    height: 35vh;
 
     color: white;
     text-align: center;
 }
 
 .WelcomeText {
-    flex-basis: 70%;
-    min-width: 70%;
+    flex-basis: 20rem;
+    min-width: 20rem;
 
     animation: move-text 2s linear;
 }
 
 @keyframes move-text {
-    from { margin-right: -70% };
+    from { margin-right: -20rem };
     to { margin-right: 0; };
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from { opacity: 0; };
+    to { opacity: 1; };
 }

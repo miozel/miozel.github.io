@@ -1,11 +1,9 @@
 .Layout {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
     font-family: Inter,sans-serif;
+}
+
+.Page {
+    margin-bottom: 48px;
 }
 
 .Background {
@@ -33,7 +31,7 @@
 
     top: 0;
     left: 35%;
-    background: transparent url(../../../public/background/sky-stars.png);
+    background: transparent url(../../../../public/background/sky-stars.png);
     z-index: -2;
 
     animation: twink-and-move 10s linear infinite alternate;
@@ -50,7 +48,7 @@
 .Fog {
     @extend .Background;
 
-    background: transparent url(../../../public/background/fog.png) repeat top center;
+    background: transparent url(../../../../public/background/fog.png) repeat top center;
     opacity: 0.05;
     z-index: -1;
 }

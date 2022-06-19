@@ -11,4 +11,12 @@ describe('<Home />', () => {
 
     expect(welcome).toBeVisible();
   });
+
+  test('projects should be visible', () => {
+    render(<Home />);
+    
+    const projects = screen.queryByText('Projects');
+
+    expect(projects).toBeVisible();
+  });
 });
