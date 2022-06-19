@@ -15,7 +15,7 @@ const Layout = (props) => (
       <NavBar />
     </div>
     
-    <div className={styles.Content} data-testid="Content">
+    <div data-testid="Content">
       { props.children }
     </div>
     </div>

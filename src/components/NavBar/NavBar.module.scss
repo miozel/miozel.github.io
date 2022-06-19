@@ -1,51 +1,39 @@
 .NavBar {
-    position: fixed;
-    backdrop-filter: blur(2px) invert(0.05) contrast(0.9);
-
-    top: 40px;
-    left: 0px;
+    height: 5rem;
     width: 100%;
-    height: 3rem;
-    z-index: 99;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: loos-normal,sans-serif;
+    font-weight: 700;
 }
 
 nav {
     height: 100%;
 }
 
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.NavLink {
+    display: inline-block;
 
-    list-style: none;
-    height: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
     
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: flex;
-    flex-basis: 20%;
-    align-items: center;
-    justify-content: center;
-
-    height: 100%;
-}
-
-nav ul li a {
     color: white;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9 rem;
-    font-weight: 300;
     text-decoration: none;
+    vertical-align: middle;
 }
 
-nav li:nth-of-type(1){background-color: #EA495F}
-nav li:nth-of-type(2){background-color: #F4837D}
-nav li:nth-of-type(3){background-color: #FDCEA9}
-nav li:nth-of-type(4){background-color: #99B998}
+.NavLink:hover {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.NavHome {
+    @extend .NavLink;
+
+    font-size: 2rem;
+}
+
+.NavHome:hover {
+    background-color: inherit;
+}

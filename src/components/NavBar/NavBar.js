@@ -6,11 +6,8 @@ import { Link } from 'react-router-dom';
 const NavBar = () => (
   <div className={styles.NavBar}>
     <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-      </ul>
+      <Link className={styles.NavHome} to="/">M</Link>
+      <Link className={styles.NavLink} to="/">Home</Link>
     </nav>
   </div>
 );
