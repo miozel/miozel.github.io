@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c120d744.css",
-    "main.js": "/static/js/main.0db4c599.js",
+    "main.css": "/static/css/main.a032d310.css",
+    "main.js": "/static/js/main.9ed100d6.js",
     "static/js/787.4bba04a3.chunk.js": "/static/js/787.4bba04a3.chunk.js",
-    "static/media/sky-stars.jpg": "/static/media/sky-stars.395e745646f1d0272e1f.jpg",
-    "static/media/fog.png": "/static/media/fog.96b9efa74b129a16c3d4.png",
-    "static/media/twinkling-stars.jpg": "/static/media/twinkling-stars.b27e9c4a239ec14b1527.jpg",
+    "static/media/fog.png": "/static/media/fog.73a5142647c1729f7e88.png",
+    "static/media/sky-stars.png": "/static/media/sky-stars.be2d4847b790be24b793.png",
     "index.html": "/index.html",
-    "main.c120d744.css.map": "/static/css/main.c120d744.css.map",
-    "main.0db4c599.js.map": "/static/js/main.0db4c599.js.map",
+    "main.a032d310.css.map": "/static/css/main.a032d310.css.map",
+    "main.9ed100d6.js.map": "/static/js/main.9ed100d6.js.map",
     "787.4bba04a3.chunk.js.map": "/static/js/787.4bba04a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c120d744.css",
-    "static/js/main.0db4c599.js"
+    "static/css/main.a032d310.css",
+    "static/js/main.9ed100d6.js"
   ]
 }
